@@ -20,13 +20,14 @@ Logically, once the biplanar *CVPixelBuffer* object is created, we should call t
 <br />
 <br />
 
-When the camera icon on the debugging toolbar is clicked, a purple exclamation mark appeared on central part of the tool bar.
+When the camera icon on the debugging toolbar was clicked, a purple exclamation mark appeared on right of XCode's Status Bar.
 
 Several messages appeared on clicking the purple exclamation mark. All are similar to that below:
 
 
     Memory Usage'Texture:0x10061a3f0 "CoreVideo 0x60000175da00"' has storage mode 'Managed' but is accessed exclusively by a GPU.
 
+<br />
 
 Apparently, the system has flagged the resources as private even though the texture's storage mode is managed. It is likely a graphics driver problem.
 
